@@ -1,0 +1,91 @@
+﻿## Build results
+bin/
+obj/
+[Ll]og/
+*.log
+
+## User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+## OS generated files
+.DS_Store
+Thumbs.db
+
+## Visual Studio
+.vscode/
+.vs/
+*.VC.db
+*.VC.VC.opendb
+
+## Rider
+.idea/
+
+## Dotnet tools
+*.db
+*.pdb
+*.mdb
+
+## NuGet
+*.nupkg
+# The packages folder can be ignored because of PackageReference
+**/packages/*
+!**/packages/build/
+!**/packages/repositories.config
+
+## ASP.NET
+# Ignore folders with published websites
+**/publish/
+**/wwwroot/dist/
+**/wwwroot/node_modules/
+
+## Configuration files
+appsettings.*.json
+secrets.json
+
+## Entity Framework
+Migrations/
+
+## Test results
+TestResults/
+*.coverage
+*.coveragexml
+*.testsettings
+*.vsmdi
+*.vsp
+*.vspx
+*.trx
+
+## Azure
+.publishsettings
+*.azurePubxml
+# Local Azure Functions settings
+local.settings.json
+
+## Node.js (if you use frontend together)
+node_modules/
+npm-debug.log
+yarn-error.log
+.env
+
+## Logs
+*.log
+
+## Backup files
+*.bak
+*.swp
+*~
+*.tmp
+
+## Recycle bin for VS Code
+.history/
+
+## JetBrains Rider
+.idea/
+
+## Other
+*.rej
+*.orig
