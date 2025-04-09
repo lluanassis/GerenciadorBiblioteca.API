@@ -1,8 +1,8 @@
 ﻿namespace GerenciadorBiblioteca.API.Entities
 {
-    public class Usuario : BaseEntity
+    public class User : BaseEntity
     {
-        public Usuario(string nome, string email) : base()
+        public User(string nome, string email) : base()
         {
             Nome = nome;
             Email = email;

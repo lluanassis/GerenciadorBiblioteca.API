@@ -1,0 +1,108 @@
+[
+  {
+    "ContainingType": "GerenciadorBiblioteca.Controllers.BookController",
+    "Method": "Post",
+    "RelativePath": "api/books",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "GerenciadorBiblioteca.API.Models.CreateBookInputModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GerenciadorBiblioteca.Controllers.BookController",
+    "Method": "GetAll",
+    "RelativePath": "api/books",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GerenciadorBiblioteca.Controllers.BookController",
+    "Method": "GetById",
+    "RelativePath": "api/books/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GerenciadorBiblioteca.Controllers.BookController",
+    "Method": "Delete",
+    "RelativePath": "api/books/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GerenciadorBiblioteca.Controllers.LoanController",
+    "Method": "Post",
+    "RelativePath": "api/loans",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loan",
+        "Type": "GerenciadorBiblioteca.API.Models.CreateLoanModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GerenciadorBiblioteca.Controllers.LoanController",
+    "Method": "Return",
+    "RelativePath": "api/loans/return",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loan",
+        "Type": "GerenciadorBiblioteca.API.Models.ReturnBookLoanModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GerenciadorBiblioteca.Controllers.UserController",
+    "Method": "Post",
+    "RelativePath": "api/users",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "GerenciadorBiblioteca.API.Models.CreateUserInputModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

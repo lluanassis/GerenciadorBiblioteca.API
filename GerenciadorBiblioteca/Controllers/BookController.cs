@@ -1,5 +1,6 @@
 using System.Reflection;
 using GerenciadorBiblioteca.API.Models;
+using GerenciadorBiblioteca.API.Persistence;
 using GerenciadorBiblioteca.API.Services;
 using Microsoft.AspNetCore.Mvc;
 
@@ -9,11 +10,11 @@ namespace GerenciadorBiblioteca.Controllers
     [Route("api/books")]
     public class BookController : ControllerBase
     {
-        private readonly IConfigService _configuration;
+        private readonly GerenciadorBibliotecaDbContext _context;
 
-        public BookController(IConfigService configuration)
+        public BookController(GerenciadorBibliotecaDbContext context)
         {
-            _configuration = configuration;
+            _context = context;
         }
 
         //POST api/books

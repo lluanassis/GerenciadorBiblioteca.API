@@ -1,6 +1,6 @@
 ﻿namespace GerenciadorBiblioteca.API.Models
 {
-    public class ReturnBookLoanModel
+    public class ReturnBookLoanViewModel
     {
         public int Id { get; set; }
         public int IdUsuario { get; set; }
