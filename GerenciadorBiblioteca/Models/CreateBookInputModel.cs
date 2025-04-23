@@ -1,11 +1,14 @@
-﻿namespace GerenciadorBiblioteca.API.Models
+﻿using GerenciadorBiblioteca.API.Entities;
+
+namespace GerenciadorBiblioteca.API.Models
 {
     public class CreateBookInputModel
     {
-        public int Id { get; set; }
         public string Titulo { get; set; }
         public string Autor { get; set; }
         public string ISBN { get; set; }
-        public DateTime AnoPublicacao { get; set; }
+        public int AnoPublicacao { get; set; }
+
+        public Book ToEntity() => new(Titulo, Autor, ISBN, AnoPublicacao); 
     }
 }

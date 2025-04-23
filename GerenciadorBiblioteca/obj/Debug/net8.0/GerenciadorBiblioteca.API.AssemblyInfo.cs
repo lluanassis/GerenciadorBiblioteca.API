@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GerenciadorBiblioteca.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cb6b397d35f1e34789ec8bfa970ddfe62a656464")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9b88965c44cf5688aa336a40fa2f8c7b08c8d65c")]
 [assembly: System.Reflection.AssemblyProductAttribute("GerenciadorBiblioteca.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GerenciadorBiblioteca.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

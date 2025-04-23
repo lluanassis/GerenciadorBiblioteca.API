@@ -122,29 +122,10 @@
       }
     },
     "/api/loans/return": {
-      "post": {
+      "get": {
         "tags": [
           "Loan"
         ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/ReturnBookLoanModel"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/ReturnBookLoanModel"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/ReturnBookLoanModel"
-              }
-            }
-          }
-        },
         "responses": {
           "200": {
             "description": "OK"
@@ -189,10 +170,6 @@
       "CreateBookInputModel": {
         "type": "object",
         "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int32"
-          },
           "titulo": {
             "type": "string",
             "nullable": true
@@ -206,8 +183,8 @@
             "nullable": true
           },
           "anoPublicacao": {
-            "type": "string",
-            "format": "date-time"
+            "type": "integer",
+            "format": "int32"
           }
         },
         "additionalProperties": false
@@ -215,10 +192,6 @@
       "CreateLoanModel": {
         "type": "object",
         "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int32"
-          },
           "idUsuario": {
             "type": "integer",
             "format": "int32"
@@ -237,10 +210,6 @@
       "CreateUserInputModel": {
         "type": "object",
         "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int32"
-          },
           "nome": {
             "type": "string",
             "nullable": true
@@ -248,28 +217,6 @@
           "email": {
             "type": "string",
             "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "ReturnBookLoanModel": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "idUsuario": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "idLivro": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "dataEmprestimo": {
-            "type": "string",
-            "format": "date-time"
           }
         },
         "additionalProperties": false

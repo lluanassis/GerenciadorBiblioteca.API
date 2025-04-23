@@ -7,7 +7,11 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddSingleton<IConfigService, ConfigService>();
 
-builder.Services.AddDbContext<GerenciadorBibliotecaDbContext>(options => options.UseInMemoryDatabase("GerenciadorBibliotecaDb"));
+//builder.Services.AddDbContext<GerenciadorBibliotecaDbContext>(options => options.UseInMemoryDatabase("GerenciadorBibliotecaDb"));
+
+var connectionString = builder.Configuration.GetConnectionString("GerenciadorBiblioteca");
+builder.Services.AddDbContext<GerenciadorBibliotecaDbContext>(options => options.UseSqlServer(connectionString));
+
 
 builder.Services.AddExceptionHandler<ApiExceptionHandler>();
 builder.Services.AddProblemDetails();
